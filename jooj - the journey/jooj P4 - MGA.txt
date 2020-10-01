@@ -1,0 +1,21 @@
+jooj
+
+Grupo: Daniel Vaz, Gustavo Medeiros, Luiz Claudio, Ricado Coutinho, Wellington Jr
+
+Gerente do Projeto: Luiz Claudio
+
+Objetivos: Promover jagabilidade simples em um jogo altamente divertido!
+
+Responsabilidades: 
+Daniel Vaz - Implementação/ Level Design
+Luiz Claudio - Implementação/Código
+Gustavo Medeiros - Level Design
+Ricardo Coutinho - Level Design
+Wellington Jr - Música/SFX
+
+Etapas:
+1º Brainstorming, Definição do game
+2º Art Design/SFX
+3º Desinvolvimento do Level Design
+4º Implementação
+5º Implementação VR

@@ -1,0 +1,26 @@
+jooj v2
+
+Grupo: Daniel Vaz, Gustavo Medeiros, Luiz Claudio, Ricado Coutinho, Wellington Jr
+
+Gerente do Projeto: Luiz Claudio
+
+Objetivos: Desvie de asteróides e destrua naves inimigas numa incrível nave espacial.
+
+Controles: WASD e mouse (futuramente Oculus Rift)
+
+Responsabilidades: 
+Daniel Vaz - Implementação/ Level Design
+Luiz Claudio - Implementação/Código
+Gustavo Medeiros - Level Design
+Ricardo Coutinho - Level Design
+Wellington Jr - Música/SFX
+
+Etapas:
+1º Brainstorm, Definição do game
+2º Art Design
+3º Desenvolvimento do Level Design
+4º Implementação
+
+24/10/19
+
+Luiz está trabalhando na movimentação da nave e rastro, enquanto Daniel está criando as cenas, que contam com alguns asteróides. Vamos testar o que já foi feito no VR.
