@@ -20,8 +20,9 @@ public class cuscript : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             Rigidbody rigid = Instantiate(rigidbody, transform.position - new Vector3(2 * (i % 2 == 0 ? -1 : 1), 0, 0), transform.rotation) as Rigidbody;
+            rigid.gameObject.layer = 9;
             i++;
-            rigid.velocity = transform.TransformDirection(new Vector3(0, 0, 200));
+            rigid.velocity = transform.TransformDirection(new Vector3(0, 0, 1500));
             rigid.detectCollisions = true;
         }
     }

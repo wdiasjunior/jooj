@@ -8,11 +8,19 @@ public class shootcolide : MonoBehaviour
     public GameObject ignore;
     public Collider collision;
     public GameObject explosion;
+    public GameObject parent;
+    public bool ignoreEnemies = false;
 
 
     void Start()
     {
-		
+        if (ignoreEnemies)
+        {
+            Physics.IgnoreLayerCollision(10, 9);
+        } else
+        {
+            Physics.IgnoreLayerCollision(0, 10);
+        }
     }
 
     // Update is called once per frame
@@ -25,16 +33,12 @@ public class shootcolide : MonoBehaviour
     {
         if (!collision.gameObject.tag.Contains("IgnoreShoot"))
         {
-			ScoreScript.scoreValue += 1;
-            Instantiate(explosion, collision.collider.transform.position, Quaternion.identity);
+            ScoreScript.scoreValue += 1;
             Destroy(collision.gameObject);
-            Destroy(collision.collider);
-            Destroy(gameObject);
-
-
-        } else
-        {
-            Physics.IgnoreCollision(collision.collider, this.collision);
         }
+
+        Instantiate(explosion, collision.collider.transform.position, Quaternion.identity);
+        Destroy(collision.collider);
+        Destroy(gameObject);
     }
 }

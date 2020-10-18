@@ -45,7 +45,7 @@ TrailRenderer:
   m_GameObject: {fileID: 8660100402797810093}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 0
   m_LightProbeUsage: 2
@@ -135,7 +135,7 @@ TrailRenderer:
     alignment: 0
     textureMode: 0
     shadowBias: 0
-    generateLightingData: 1
+    generateLightingData: 0
   m_MinVertexDistance: 0
   m_Autodestruct: 1
   m_Emitting: 1
@@ -208,6 +208,8 @@ MonoBehaviour:
   ignore: {fileID: 76944331955037144, guid: 22573a0be8fa73043852f038ce25f69a, type: 3}
   collision: {fileID: 2461922444846685348}
   explosion: {fileID: 100004, guid: 82019e923dca94848916b96b8f98a352, type: 3}
+  parent: {fileID: 76944331955037144, guid: 22573a0be8fa73043852f038ce25f69a, type: 3}
+  ignoreEnemies: 0
 --- !u!135 &2461922444846685348
 SphereCollider:
   m_ObjectHideFlags: 0
