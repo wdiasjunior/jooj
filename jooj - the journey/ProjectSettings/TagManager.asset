@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Enemy
   - IgnoreShoot
+  - PlayerCamera
+  - ShipCamera
+  - Ship
   layers:
   - Default
   - TransparentFX
