@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// Applies linear and angular forces to a ship.
@@ -33,11 +34,9 @@ public class ShipPhysics : MonoBehaviour
     void Awake()
     {
         rbody = GetComponent<Rigidbody>();
-        if (rbody == null)
-        {
-            Debug.LogWarning(name + ": ShipPhysics has no rigidbody.");
-        }
-
+        Scene currentScene = SceneManager.GetActiveScene();
+        string sceneName = currentScene.name;
+        rbody.isKinematic = sceneName.Equals("EarthScene");
         ship = GetComponent<Ship>();
     }
 
