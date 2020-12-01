@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class ButtonManager : MonoBehaviour {
 
+    readonly int loadEarthScene = 4;
+
     public void PlayGameBtn(string LoadingScene1)
     {
         ScoreScript.eUmNovoJogo = true;
@@ -21,7 +23,6 @@ public class ButtonManager : MonoBehaviour {
         SceneManager.LoadScene(MainMenuScreen);
     }
 
-
     public void ExitBtn(string MainMenuScreen)
     {
         Application.Quit();
@@ -29,7 +30,7 @@ public class ButtonManager : MonoBehaviour {
 
     void OnTriggerEnter()
     {
-        Application.LoadLevel(4);
+        Application.LoadLevel(loadEarthScene);
     }
 
     // Update is called once per frame
@@ -38,22 +39,24 @@ public class ButtonManager : MonoBehaviour {
         OnGUI();
     }
 
-
     void OnGUI()
     {
-
         if (Event.current.Equals(Event.KeyboardEvent("enter")) && SceneManager.GetActiveScene().name.Equals("LoadingScene1"))
+        {
             StartCoroutine(WaitToLoad(0, 2));
-        
+        }
         else if (Event.current.Equals(Event.KeyboardEvent("escape")) && SceneManager.GetActiveScene().name.Equals("MainGameScene"))
+        {
             StartCoroutine(WaitToLoad(0, 3));
-
+        }
         else if (SceneManager.GetActiveScene().name.Equals("LoadBackMenu"))
+        {
             StartCoroutine(WaitToLoad(5, 0));
-        
+        }
         else if (SceneManager.GetActiveScene().name.Equals("LoadEarthScene"))
+        {
             StartCoroutine(WaitToLoad(5, 5));
-
+        }
     }
 
     IEnumerator WaitToLoad(int seconds, int sceneIndex)
