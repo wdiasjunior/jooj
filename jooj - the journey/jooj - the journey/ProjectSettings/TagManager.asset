@@ -9,6 +9,7 @@ TagManager:
   - PlayerCamera
   - ShipCamera
   - Ship
+  - HouseCamera
   layers:
   - Default
   - TransparentFX

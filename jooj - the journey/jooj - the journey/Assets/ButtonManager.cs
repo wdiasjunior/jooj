@@ -41,7 +41,7 @@ public class ButtonManager : MonoBehaviour {
 
     void OnGUI()
     {
-        if (Event.current.Equals(Event.KeyboardEvent("enter")) && SceneManager.GetActiveScene().name.Equals("LoadingScene1"))
+        if (Event.current.Equals(Event.KeyboardEvent("return")) && SceneManager.GetActiveScene().name.Equals("LoadingScene1"))
         {
             StartCoroutine(WaitToLoad(0, 2));
         }
